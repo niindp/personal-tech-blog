@@ -20,17 +20,31 @@ if (darkModeBtn) {
 
         updateButtonText();
     });
-
 }
 
 function updateButtonText() {
 
     if (!darkModeBtn) return;
 
-    if (document.body.classList.contains("dark-mode")) {
-        darkModeBtn.textContent = "☀️ Light Mode";
-    } else {
-        darkModeBtn.textContent = "🌙 Dark Mode";
-    }
-
+    darkModeBtn.textContent =
+        document.body.classList.contains("dark-mode")
+        ? "☀️ Light Mode"
+        : "🌙 Dark Mode";
 }
+
+
+// SCROLL ANIMATION
+const elements = document.querySelectorAll('.content, .hero, article, .project-card');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+elements.forEach(el => {
+    el.classList.add('fade-in');
+    observer.observe(el);
+});

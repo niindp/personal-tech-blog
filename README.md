@@ -1,33 +1,65 @@
-# Personal Tech Blog
+# 🌸 Personal Tech Blog
 
-## Description
+## 📌 Project Description
 
-This project is a responsive personal blog website developed using HTML, CSS, and JavaScript. The website serves as a portfolio to share technology-related content, networking concepts, and personal learning experiences.
+This project is a responsive personal blog website developed using **HTML, CSS, and JavaScript**.  
+It serves as a personal portfolio platform to showcase my learning journey in technology, networking concepts, and web development.
 
-## Features
+The website demonstrates basic front-end development skills, UI design, responsiveness, and user interaction features.
 
-* Home Page
-* About Page
-* Blog Page
-* Contact Page
-* Responsive Design
-* Dark Mode Toggle
+---
 
-## Technologies Used
+## ✨ Features
 
-* HTML5
-* CSS3
-* JavaScript
+- 🏠 Home Page with personal introduction
+- 👩 About Page with skills and interests
+- 📝 Blog Page with sample technical posts
+- 📧 Contact Page with email and social links
+- 📱 Responsive design (mobile-friendly layout)
+- 🌙 Dark Mode toggle for better user experience
+- 🎨 Clean and modern UI design
+- ✨ Smooth animations for better interaction
 
-## How to Run
+---
 
-1. Download or clone the repository.
-2. Open `index.html` in a web browser.
+## 🛠️ Technologies Used
 
-## Live Demo
+- HTML5 (structure)
+- CSS3 (styling and layout)
+- JavaScript (interactivity: dark mode + animations)
 
-https://niindp.github.io/personal-tech-blog/
+---
 
-## Author
+## 🚀 How to Run the Project
 
-Nur Iffah Nadhirah
+1. Download or clone this repository
+2. Open the project folder
+3. Double-click `index.html`  
+   OR  
+   Open using **Live Server (VS Code)** for best experience
+
+---
+
+## 🌐 Live Demo
+
+👉 https://niindp.github.io/personal-tech-blog/
+
+---
+
+## 📁 Project Structure
+
+```text
+personal-tech-blog/
+│
+├── index.html
+├── about.html
+├── blog.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
