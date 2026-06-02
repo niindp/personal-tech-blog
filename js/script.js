@@ -48,3 +48,22 @@ elements.forEach(el => {
     el.classList.add('fade-in');
     observer.observe(el);
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.querySelector("nav ul");
+
+if(menuToggle){
+
+    menuToggle.addEventListener("click", () => {
+
+        navMenu.classList.toggle("show");
+
+        darkModeBtn.classList.toggle("show");
+
+        if(navMenu.classList.contains("show")){
+            menuToggle.textContent = "✕";
+        }else{
+            menuToggle.textContent = "☰";
+        }
+    });
+}

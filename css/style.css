@@ -40,14 +40,26 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:white;
+    color:#ff5f8f;
+
+    padding:12px 22px;
+    border-radius:25px;
+
     text-decoration:none;
     font-weight:600;
-    transition:0.3s;
+
+    transition:0.3s ease;
 }
 
 nav a:hover{
-    color:#ffe4ec;
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+    background:#fff5f8;
 }
 
 /* DARK MODE BUTTON */
@@ -75,6 +87,16 @@ nav a:hover{
 
 .hero p{
     font-size:1.2rem;
+}
+
+.hero{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    text-align:center;
 }
 
 /* PROFILE IMAGE (NORMAL BUT BIGGER) */
@@ -174,6 +196,15 @@ footer{
     color:#ffd6e0;
 }
 
+.dark-mode .hero{
+    background:#2b0f22;
+    color:#ffd6e0;
+}
+
+.dark-mode .hero h2{
+    color:#ff8fb1;
+}
+
 .dark-mode article{
     background:#3a0a2b;
 }
@@ -185,6 +216,15 @@ footer{
 .dark-mode #darkModeBtn{
     background:#ff5f8f;
     color:white;
+}
+
+.dark-mode nav a{
+    background:#4a1235;
+    color:#ffd6e0;
+}
+
+.dark-mode nav a:hover{
+    background:#5c1b44;
 }
 
 /* =========================
@@ -203,6 +243,18 @@ footer{
     filter: blur(0);
 }
 
+.menu-toggle{
+    display:none;
+    background:white;
+    border:none;
+    color:#ff5f8f;
+    font-size:1.5rem;
+    padding:8px 14px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
 /* RESPONSIVE */
 @media (max-width:768px){
 
@@ -210,16 +262,40 @@ footer{
         padding:10px;
     }
 
-    nav{
-        flex-direction:column;
-        gap:15px;
-    }
+nav{
+    flex-wrap:wrap;
+    padding:15px;
+}
 
-    nav ul{
-        flex-direction:column;
-        text-align:center;
-        gap:10px;
-    }
+nav h1{
+    flex:1;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+nav ul{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:12px;
+    margin-top:15px;
+}
+
+nav ul.show{
+    display:flex;
+}
+
+#darkModeBtn{
+    display:none;
+    width:100%;
+    margin-top:10px;
+}
+
+#darkModeBtn.show{
+    display:block;
+}
 
     .hero h2{
         font-size:2rem;
@@ -255,4 +331,12 @@ nav,
 footer{
     position: relative;
     z-index: 2;
+}
+
+.home .active-home,
+.about .active-about,
+.blog .active-blog,
+.contact .active-contact{
+    background:#ff5f8f;
+    color:white;
 }
