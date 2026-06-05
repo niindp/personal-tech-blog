@@ -335,8 +335,107 @@ footer{
 
 .home .active-home,
 .about .active-about,
+.projects .active-projects,
 .blog .active-blog,
 .contact .active-contact{
     background:#ff5f8f;
     color:white;
+}
+
+/* =========================
+   💼 PROJECTS PAGE
+========================= */
+
+.portfolio-card-dropdown{
+    max-width:900px;
+    margin:25px auto;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.portfolio-card-dropdown:hover{
+    transform:translateY(-3px);
+}
+
+.portfolio-summary-header{
+    list-style:none;
+    cursor:pointer;
+    padding:25px;
+}
+
+.portfolio-summary-header::-webkit-details-marker{
+    display:none;
+}
+
+.card-left-info h3{
+    color:#e75480;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.card-left-info p{
+    color:#777;
+}
+
+.category-tag{
+    display:inline-block;
+    background:#ff8fb1;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:0.8rem;
+    font-weight:600;
+}
+
+.portfolio-dropdown-content{
+    padding:0 25px 25px 25px;
+}
+
+.project-image{
+    width:100%;
+    border-radius:15px;
+    margin-top:15px;
+    margin-bottom:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.portfolio-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 20px;
+    background:#ff5f8f;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.portfolio-btn:hover{
+    background:#e75480;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   DARK MODE PROJECTS
+========================= */
+
+.dark-mode .portfolio-card-dropdown{
+    background:#2b0f22;
+}
+
+.dark-mode .card-left-info p{
+    color:#ffd6e0;
+}
+
+.dark-mode .portfolio-btn{
+    background:#ff8fb1;
+    color:white;
+}
+
+.dark-mode .portfolio-btn:hover{
+    background:#ff5f8f;
 }
