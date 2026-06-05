@@ -43,7 +43,7 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 ## 🌸 Favicon Design
 
 <p align="center">
-  <img src="images/01-favicon.png" width="120">
+  <img src="images/screenshots/01-favicon.png" width="120">
 </p>
 
 > Minimal pink floral favicon representing personal branding of the portfolio.
