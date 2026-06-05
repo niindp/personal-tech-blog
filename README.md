@@ -40,30 +40,68 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 
 ---
 
+## 🌸 Favicon Design
+
+<p align="center">
+  <img src="images/01-favicon.png" width="120">
+</p>
+
+> Minimal pink floral favicon representing personal branding of the portfolio.
+
+---
+
 ## 📸 Screenshots
 
-> Click images to view full size (if hosted on GitHub)
+> Below are key pages and features of the Personal Tech Blog website.
+
+---
 
 ### 🏠 Home Page
-<img src="images/screenshots/home.png" width="600">
+<p align="center">
+  <img src="images/screenshots/home.png" width="600">
+</p>
+
+---
 
 ### 👩 About Page
-<img src="images/screenshots/about.png" width="600">
+<p align="center">
+  <img src="images/screenshots/about.png" width="600">
+</p>
+
+---
 
 ### 📝 Blog Page
-<img src="images/screenshots/blog.png" width="600">
+<p align="center">
+  <img src="images/screenshots/blog.png" width="600">
+</p>
+
+---
 
 ### 💼 Projects Page
-<img src="images/screenshots/projects.png" width="600">
+<p align="center">
+  <img src="images/screenshots/projects.png" width="600">
+</p>
+
+---
 
 ### 📧 Contact Page
-<img src="images/screenshots/contact.png" width="600">
+<p align="center">
+  <img src="images/screenshots/contact.png" width="600">
+</p>
+
+---
 
 ### 🌙 Dark Mode Feature
-<img src="images/screenshots/darkmode.png" width="600">
+<p align="center">
+  <img src="images/screenshots/darkmode.png" width="600">
+</p>
+
+---
 
 ### 🖼️ Image Popup Feature
-<img src="images/screenshots/popup.png" width="600">
+<p align="center">
+  <img src="images/screenshots/popup.png" width="600">
+</p>
 
 ---
 
