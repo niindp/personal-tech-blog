@@ -9,7 +9,12 @@
 body{
     font-family:'Segoe UI',sans-serif;
     color:#444;
-    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+
+    /* 🌈 NEW MULTI-COLOR ANIMATED BACKGROUND */
+    background: linear-gradient(-45deg, #ffdde1, #ee9ca7, #a18cd1, #fbc2eb, #fad0c4);
+    background-size: 500% 500%;
+    animation: gradientMove 14s ease infinite;
+
     transition:0.3s ease;
 }
 
@@ -57,9 +62,12 @@ nav a{
 }
 
 nav a:hover{
-    transform:translateY(-3px);
-    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+    transform: translateY(-4px) scale(1.03);
     background:#fff5f8;
+
+    box-shadow:
+        0 10px 25px rgba(255, 95, 143, 0.25),
+        0 0 18px rgba(255, 95, 143, 0.15);
 }
 
 /* DARK MODE BUTTON */
@@ -99,7 +107,7 @@ nav a:hover{
     text-align:center;
 }
 
-/* PROFILE IMAGE (NORMAL BUT BIGGER) */
+/* PROFILE IMAGE */
 .profile-pic{
     width:180px;
     height:180px;
@@ -160,7 +168,7 @@ article:hover{
 
 /* PROJECT */
 .project-card{
-    background:white;
+    background:#fff0f5;
     padding:15px;
     margin:10px 0;
     border-radius:10px;
@@ -180,24 +188,27 @@ footer{
 }
 
 /* =========================
-   💖 DARK MODE (FIXED DARK PINK)
+   💖 DARK MODE (NOW MULTI-COLOR TOO)
 ========================= */
 .dark-mode{
-    background: linear-gradient(135deg, #4a1235, #6a1b4d);
     color:#ffd6e0;
+
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1b1b2f, #3a0a2b);
+    background-size: 500% 500%;
+    animation: gradientMoveDark 14s ease infinite;
 }
 
 .dark-mode nav{
-    background:#3a0a2b;
+    background:#2a0a1f;
 }
 
 .dark-mode .content{
-    background:#2b0f22;
+    background:#1e0f1b;
     color:#ffd6e0;
 }
 
 .dark-mode .hero{
-    background:#2b0f22;
+    background:#1e0f1b;
     color:#ffd6e0;
 }
 
@@ -206,11 +217,11 @@ footer{
 }
 
 .dark-mode article{
-    background:#3a0a2b;
+    background:#2a0a1f;
 }
 
 .dark-mode .project-card{
-    background:#3a0a2b;
+    background:#2a0a1f;
 }
 
 .dark-mode #darkModeBtn{
@@ -219,12 +230,17 @@ footer{
 }
 
 .dark-mode nav a{
-    background:#4a1235;
+    background:#3a1230;
     color:#ffd6e0;
 }
 
 .dark-mode nav a:hover{
-    background:#5c1b44;
+    background:#ff5f8f;
+    color:white;
+
+    box-shadow:
+        0 10px 25px rgba(255, 95, 143, 0.35),
+        0 0 22px rgba(255, 95, 143, 0.25);
 }
 
 /* =========================
@@ -308,7 +324,7 @@ nav ul.show{
 }
 
 /* =========================
-   🌸 EMOJI BACKGROUND FIX (ADD ONLY)
+   🌸 EMOJI BACKGROUND FIX
 ========================= */
 
 .bg-icon{
@@ -316,30 +332,19 @@ nav ul.show{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-size: 220px;
     opacity: 0.05;
-
     pointer-events: none;
     z-index: 0;
 }
 
-/* make sure all real content stays above emoji */
+/* keep content above */
 nav,
 .hero,
 .content,
 footer{
     position: relative;
     z-index: 2;
-}
-
-.home .active-home,
-.about .active-about,
-.projects .active-projects,
-.blog .active-blog,
-.contact .active-contact{
-    background:#ff5f8f;
-    color:white;
 }
 
 /* =========================
@@ -424,7 +429,7 @@ footer{
 ========================= */
 
 .dark-mode .portfolio-card-dropdown{
-    background:#2b0f22;
+    background:#1e0f1b;
 }
 
 .dark-mode .card-left-info p{
@@ -438,4 +443,142 @@ footer{
 
 .dark-mode .portfolio-btn:hover{
     background:#ff5f8f;
+}
+
+/* =========================
+   🌈 ANIMATIONS
+========================= */
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes gradientMoveDark {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   ✨ CUSTOM CURSOR (GLOW DOT)
+========================= */
+
+body{
+    cursor: none; /* hide default cursor */
+}
+
+/* main cursor dot */
+.cursor-dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+
+    width: 18px;
+    height: 18px;
+
+    background: transparent;
+    box-shadow: none;
+
+    font-size: 18px;
+
+    transform: translate(-50%, -50%);
+}
+
+/* =========================
+   🖼️ PROJECT IMAGE CARDS
+========================= */
+
+.project-media{
+    margin:15px 0;
+    border-radius:16px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.6);
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.project-media:hover{
+    transform:translateY(-5px);
+    box-shadow:
+        0 12px 30px rgba(255,95,143,0.25),
+        0 0 18px rgba(255,95,143,0.15);
+}
+
+.project-image{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.project-image:hover{
+    transform:scale(1.03);
+}
+
+/* DARK MODE */
+.dark-mode .project-media{
+    background:#2a0a1f;
+}
+
+/* =========================
+   🔍 IMAGE POPUP (LIGHTBOX)
+========================= */
+
+.img-popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.85);
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.img-popup img{
+    max-width:90%;
+    max-height:85%;
+    border-radius:15px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.5);
+}
+
+.project-media{
+    position: relative;
+    cursor: pointer;
+}
+
+/* hover dark overlay */
+.project-media::after{
+    content:"🔍 Click to view";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,0.35);
+    color:white;
+    font-weight:600;
+    font-size:1rem;
+
+    opacity:0;
+    transition:0.3s ease;
+    border-radius:16px;
+}
+
+/* show on hover */
+.project-media:hover::after{
+    opacity:1;
 }

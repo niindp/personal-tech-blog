@@ -1,32 +1,69 @@
-# 🌸 Personal Tech Blog
+# 🌸 Personal Tech Blog / Portfolio Website
 
-## 📌 Project Description
+A responsive and interactive personal portfolio blog website built using **HTML, CSS, and JavaScript**.  
+This project showcases my academic journey, technical skills, creative projects, and personal interests in technology and multimedia.
 
-This project is a responsive personal blog website developed using **HTML, CSS, and JavaScript**.  
-It serves as a personal portfolio platform to showcase my learning journey in technology, networking concepts, and web development.
+---
 
-The website demonstrates basic front-end development skills, UI design, responsiveness, and user interaction features.
+## ✨ Overview
+
+This website serves as my personal digital portfolio where I share:
+
+- My academic background 🎓  
+- Technical and multimedia projects 💼  
+- Blog posts about my learning journey 📝  
+- Contact information 📧  
+
+It is designed with a modern pastel aesthetic (pink theme), smooth animations, and responsive layout for all devices.
 
 ---
 
 ## ✨ Features
 
-- 🏠 Home Page with personal introduction
-- 👩 About Page with skills and interests
-- 📝 Blog Page with sample technical posts
-- 📧 Contact Page with email and social links
-- 📱 Responsive design (mobile-friendly layout)
-- 🌙 Dark Mode toggle for better user experience
-- 🎨 Clean and modern UI design
-- ✨ Smooth animations for better interaction
+- 🏠 **Home Page** – Personal introduction and highlights  
+- 👩 **About Page** – Skills, background, and interests  
+- 💼 **Projects Page** – Interactive project showcase with expandable cards  
+- 📝 **Blog Page** – Personal learning journey and reflections  
+- 📧 **Contact Page** – Contact form and social links  
+- 🌙 **Dark Mode Toggle** – Saves user preference using localStorage  
+- ✨ **Smooth Animations** – Scroll fade-in and hover effects  
+- 🖼️ **Image Popup Viewer** – Click images to view full size  
+- 📱 **Fully Responsive Design** – Works on mobile, tablet, and desktop  
 
 ---
 
 ## 🛠️ Technologies Used
 
-- HTML5 (structure)
-- CSS3 (styling and layout)
-- JavaScript (interactivity: dark mode + animations)
+- **HTML5** – Page structure  
+- **CSS3** – Styling, layout, animations, responsive design  
+- **JavaScript (Vanilla)** – Interactivity (dark mode, popup images, animations)  
+
+---
+
+## 📸 Screenshots
+
+> Click images to view full size (if hosted on GitHub)
+
+### 🏠 Home Page
+<img src="images/screenshots/home.png" width="600">
+
+### 👩 About Page
+<img src="images/screenshots/about.png" width="600">
+
+### 📝 Blog Page
+<img src="images/screenshots/blog.png" width="600">
+
+### 💼 Projects Page
+<img src="images/screenshots/projects.png" width="600">
+
+### 📧 Contact Page
+<img src="images/screenshots/contact.png" width="600">
+
+### 🌙 Dark Mode Feature
+<img src="images/screenshots/darkmode.png" width="600">
+
+### 🖼️ Image Popup Feature
+<img src="images/screenshots/popup.png" width="600">
 
 ---
 
@@ -55,6 +92,7 @@ personal-tech-blog/
 ├── about.html
 ├── blog.html
 ├── contact.html
+├── projects.html
 │
 ├── css/
 │   └── style.css
@@ -62,4 +100,16 @@ personal-tech-blog/
 ├── js/
 │   └── script.js
 │
-└── images/
+├── images/
+│   ├── favicon.png
+│   ├── profile.jpg
+│   ├── tech-projects/
+│   ├── multimedia-projects/
+│   └── screenshots/
+│        ├── home.png
+│        ├── about.png
+│        ├── blog.png
+│        ├── contact.png
+│        ├── darkmode.png
+│        ├── projects.png
+│        └── popup.png

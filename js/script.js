@@ -49,6 +49,8 @@ elements.forEach(el => {
     observer.observe(el);
 });
 
+
+// MOBILE MENU
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.querySelector("nav ul");
 
@@ -58,7 +60,9 @@ if(menuToggle){
 
         navMenu.classList.toggle("show");
 
-        darkModeBtn.classList.toggle("show");
+        if (darkModeBtn) {
+            darkModeBtn.classList.toggle("show");
+        }
 
         if(navMenu.classList.contains("show")){
             menuToggle.textContent = "✕";
@@ -66,4 +70,40 @@ if(menuToggle){
             menuToggle.textContent = "☰";
         }
     });
+}
+
+
+// CUSTOM CURSOR
+const cursor = document.querySelector(".cursor-dot");
+
+if (cursor) {
+    cursor.innerHTML = "💖";
+
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    });
+}
+
+
+// =========================
+// IMAGE POPUP (FIXED)
+// =========================
+
+// ONLY ONE FUNCTION (FIXED VERSION)
+function openImage(wrapper){
+    const img = wrapper.querySelector("img");
+
+    if(!img) return;
+
+    const popup = document.getElementById("imgPopup");
+    const popupImg = document.getElementById("popupImg");
+
+    popup.style.display = "flex";
+    popupImg.src = img.getAttribute("src");
+}
+
+// CLOSE POPUP
+function closeImage(){
+    document.getElementById("imgPopup").style.display = "none";
 }
