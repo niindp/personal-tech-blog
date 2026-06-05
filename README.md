@@ -93,7 +93,7 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 
 ### 🌙 Dark Mode Feature
 <p align="center">
-  <img src="images/screenshots/darkmode.png" width="600">
+  <img src="images/screenshots/dark.png" width="600">
 </p>
 
 ---
