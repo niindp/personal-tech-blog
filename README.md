@@ -46,15 +46,17 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
   <img src="images/screenshots/01-favicon.png" width="400">
 </p>
 
-> Minimal pink floral favicon representing personal branding of the portfolio.
+> Minimal pastel pink heart favicon representing a friendly, creative, and approachable personal brand identity.
 
 ---
 
 ## 📸 Screenshots
 
-> Below are key pages and features of the Personal Tech Blog website.
+> Below are previews of the Personal Tech Blog website across desktop and mobile views, along with key features.
 
 ---
+
+## 💻 Desktop Views
 
 ### 🏠 Home Page
 <p align="center">
@@ -91,6 +93,31 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 
 ---
 
+## 📱 Mobile Views
+
+### 📱 Mobile Overview
+<p align="center">
+  <img src="images/screenshots/mobile-home.jpg" width="350">
+</p>
+
+---
+
+### ☰ Mobile Navbar
+<p align="center">
+  <img src="images/screenshots/mobile-navbar.jpg" width="350">
+</p>
+
+---
+
+### 🌙📱 Dark Mode (Mobile)
+<p align="center">
+  <img src="images/screenshots/mobile-dark.jpg" width="350">
+</p>
+
+---
+
+## ✨ Feature Highlights
+
 ### 🌙 Dark Mode Feature
 <p align="center">
   <img src="images/screenshots/dark.png" width="600">
@@ -101,6 +128,13 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 ### 🖼️ Image Popup Feature
 <p align="center">
   <img src="images/screenshots/popup.png" width="600">
+</p>
+
+---
+
+### ❤️ Custom Heart Cursor
+<p align="center">
+  <img src="images/screenshots/cursor.png" width="600">
 </p>
 
 ---
@@ -148,6 +182,14 @@ personal-tech-blog/
 │        ├── about.png
 │        ├── blog.png
 │        ├── contact.png
-│        ├── darkmode.png
+│        ├── dark.png
+│        ├── mobile-home.png
+│        ├── mobile-navbar.png
+│        ├── mobile-dark.png
 │        ├── projects.png
-│        └── popup.png
+│        ├── popup.png
+│
+├── files/
+│   └── resume.pdf
+│
+└── README.md
