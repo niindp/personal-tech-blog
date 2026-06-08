@@ -7,7 +7,7 @@
 
 /* BODY */
 body{
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Lora',sans-serif;
     color:#444;
 
     /* 🌈 NEW MULTI-COLOR ANIMATED BACKGROUND */
@@ -20,10 +20,20 @@ body{
 
 /* NAVBAR */
 nav{
-    position: sticky;
-    top: 0;
-    background:#ff8fb1;
-    padding:18px 40px;
+    position:sticky;
+    top:0;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.25),
+            rgba(255,255,255,0.25)
+        ),
+        url("../images/navbar-light.png");
+
+    background-size:cover;
+    background-position:center;
+
+    padding:25px 40px;
 
     display:flex;
     justify-content:space-between;
@@ -36,6 +46,11 @@ nav{
 nav h1{
     color:white;
     font-size:1.6rem;
+
+    text-shadow:
+        0 2px 6px rgba(0,0,0,0.25);
+
+        font-family: 'Playfair Display', serif;
 }
 
 nav ul{
@@ -57,6 +72,8 @@ nav a{
 
     text-decoration:none;
     font-weight:600;
+
+    font-family: 'Inter', sans-serif;
 
     transition:0.3s ease;
 }
@@ -183,8 +200,13 @@ article:hover{
 /* FOOTER */
 footer{
     text-align:center;
-    padding:25px;
-    color:#888;
+    padding:30px;
+    color:white;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.3);
+
+    font-weight:500;
 }
 
 /* =========================
@@ -199,7 +221,15 @@ footer{
 }
 
 .dark-mode nav{
-    background:#2a0a1f;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.25)
+        ),
+        url("../images/navbar-dark.png");
+
+    background-size:cover;
+    background-position:center;
 }
 
 .dark-mode .content{
@@ -243,6 +273,13 @@ footer{
         0 0 22px rgba(255, 95, 143, 0.25);
 }
 
+.dark-mode footer{
+    color:#ffd6e0;
+
+    text-shadow:
+        0 0 12px rgba(255,143,177,0.4);
+}
+
 /* =========================
    SCROLL ANIMATION
 ========================= */
@@ -276,42 +313,47 @@ footer{
 
     body{
         padding:10px;
+        cursor:auto;
     }
 
-nav{
-    flex-wrap:wrap;
-    padding:15px;
-}
+    .cursor-dot{
+        display:none;
+    }
 
-nav h1{
-    flex:1;
-}
+    nav{
+        flex-wrap:wrap;
+        padding:15px;
+    }
 
-.menu-toggle{
-    display:block;
-}
+    nav h1{
+        flex:1;
+    }
 
-nav ul{
-    display:none;
-    width:100%;
-    flex-direction:column;
-    gap:12px;
-    margin-top:15px;
-}
+    .menu-toggle{
+        display:block;
+    }
 
-nav ul.show{
-    display:flex;
-}
+    nav ul{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        gap:12px;
+        margin-top:15px;
+    }
 
-#darkModeBtn{
-    display:none;
-    width:100%;
-    margin-top:10px;
-}
+    nav ul.show{
+        display:flex;
+    }
 
-#darkModeBtn.show{
-    display:block;
-}
+    #darkModeBtn{
+        display:none;
+        width:100%;
+        margin-top:10px;
+    }
+
+    #darkModeBtn.show{
+        display:block;
+    }
 
     .hero h2{
         font-size:2rem;
