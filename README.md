@@ -5,6 +5,13 @@ This project showcases my academic journey, technical skills, creative projects,
 
 ---
 
+## 🌐 Live Demo
+
+👉 https://niindp.github.io/personal-tech-blog/  
+📁 GitHub Repo: https://github.com/niindp/personal-tech-blog
+
+---
+
 ## ✨ Overview
 
 This website serves as my personal digital portfolio where I share:
@@ -28,6 +35,7 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 - 🌙 **Dark Mode Toggle** – Saves user preference using localStorage  
 - ✨ **Smooth Animations** – Scroll fade-in and hover effects  
 - 🖼️ **Image Popup Viewer** – Click images to view full size  
+- ❤️ **Custom Heart Cursor** – Unique interactive cursor effect  
 - 📱 **Fully Responsive Design** – Works on mobile, tablet, and desktop  
 
 ---
@@ -141,17 +149,11 @@ It is designed with a modern pastel aesthetic (pink theme), smooth animations, a
 
 ## 🚀 How to Run the Project
 
-1. Download or clone this repository
-2. Open the project folder
+1. Download or clone this repository  
+2. Open the project folder  
 3. Double-click `index.html`  
    OR  
-   Open using **Live Server (VS Code)** for best experience
-
----
-
-## 🌐 Live Demo
-
-👉 https://niindp.github.io/personal-tech-blog/
+   Use **Live Server (VS Code)** for best experience  
 
 ---
 
